@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { JobCompanies } from './cmps/JobCompanies'
+import { JobInfo } from './cmps/JobInfo'
 
 const url = 'https://course-api.com/react-tabs-project'
 
@@ -25,6 +26,7 @@ const App = () => {
   return (
     <section className='jobs-center'>
       <JobCompanies jobs={jobs} company={company} onChangeCompany={onChangeCompany} />
+      <JobInfo jobs={jobs} company={company} />
     </section>
   )
 }
