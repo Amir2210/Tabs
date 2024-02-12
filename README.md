@@ -1,4 +1,5 @@
 🛠️ React Job Listings App
+
 This React application displays job listings categorized by companies. Users can navigate through different companies' job listings and view detailed information about each job.
 
 📦 Tech Stack:
@@ -29,3 +30,11 @@ The project began with fetching job data from an external API and setting up the
 3. Run npm install to install dependencies.
 4. Run npm run dev to start the development server.
 5. Open your browser and navigate to http://localhost:5173 to view the application.
+
+   
+
+https://github.com/Amir2210/Tabs/assets/107459404/cca5b598-7689-4451-8290-6b5d56a57e34
+
+![ללא שם](https://github.com/Amir2210/Tabs/assets/107459404/83c319ae-d7f2-4419-953f-74716130089f)
+
+
