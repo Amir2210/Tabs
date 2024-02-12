@@ -1,6 +1,20 @@
+import { useEffect } from 'react'
+import { useState } from 'react'
+
 const url = 'https://course-api.com/react-tabs-project'
 
 const App = () => {
-  return <h2>Tabs Starter</h2>
+  const [jobs, setJobs] = useState(null)
+  useEffect(() => {
+    fetchData()
+  }, [])
+  async function fetchData() {
+    const data = await fetch(url)
+    const jobs = await data.json()
+    console.log(jobs)
+  }
+  return (
+    <section className='jobs-center'></section>
+  )
 }
 export default App
