@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useState } from 'react'
+import { JobCompanies } from './cmps/JobCompanies'
 
 const url = 'https://course-api.com/react-tabs-project'
 
@@ -11,10 +12,12 @@ const App = () => {
   async function fetchData() {
     const data = await fetch(url)
     const jobs = await data.json()
-    console.log(jobs)
+    setJobs(jobs)
   }
   return (
-    <section className='jobs-center'></section>
+    <section className='jobs-center'>
+      <JobCompanies />
+    </section>
   )
 }
 export default App
