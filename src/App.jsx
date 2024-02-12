@@ -14,9 +14,10 @@ const App = () => {
     const jobs = await data.json()
     setJobs(jobs)
   }
+  if (!jobs) return <div>Loading...</div>
   return (
     <section className='jobs-center'>
-      <JobCompanies />
+      <JobCompanies jobs={jobs} />
     </section>
   )
 }
